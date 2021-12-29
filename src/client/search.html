@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supa</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin:0;
+      padding:0;
+  }
+
+  button{
+    border:none;
+    background:none;
+    margin:0;
+    padding:0;
+}
+
+input{
+    width: 75%;
+    height: 75px;
+    background-color:#ccc;
+    color: black;
+    border-color:#888;
+    border-radius: 50px;
+    border-style:solid;
+    font-size:50px;
+    text-indent: 20px;
+    position:fixed;
+    top:70%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Times New Roman', Times, serif;
+    text-overflow: clip;
+}
+.emoji{
+    font-size: 15vw;
+    position:fixed;
+    left:50%;
+    top:25%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    vertical-align: middle;
+    text-align: center;
+    margin:auto;
+    text-align:center;
+    border-radius: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.searchbutton{
+  margin:0;
+  position:absolute;
+  height:80px;
+  width:auto;
+  top:70%;
+  left:75%;
+  transform:translate(100%,-50%);
+  cursor:pointer;
+}
+  </style>
+
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="icon" class="emoji" onclick="resetmessage">😂</h1>
+  <script>
+    document.getElementById("message").textContent = "hi"
+    function keypressed(event) {
+      if(event.key=="Enter") {
+        searchRequested()
+      }
+    }
+    function searchRequested() {
+      if(document.getElementById("search").value != "") {
+        search()
+      }
+    }
+    function search() {
+      searchQuery = document.getElementById("search").value
+      myobj = {}
+      obj.data = searchQuery
+      if(searchQuery.contains(" ") || !searchQuery.contains(".")) {
+        myobj.type="search"
+        window.parent.postMessage(JSON.stringify(myobj))
+      }
+      else {
+        myobj.type="get"
+        window.parent.postMessage(JSON.stringify(myobj))
+      }
+    }
+  </script>
+  <input id="search" type="text" maxlength="100" title="Search" tabindex="1" placeholder="Made by Lil' Supa" onkeydown="keypressed(event)">
+</body>
+</body>
+</html>

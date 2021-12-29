@@ -1,0 +1,23 @@
+{
+  "totalAccountsMade":1,
+  "guestUser":{
+    "id":-1,
+    "username":"guest",
+    "password":"",
+    "permissionlevel":-1,
+    "active":true,
+    "requests":[]
+  },
+  "accounts":[
+    {
+      "id":0,
+      "username":"supamaggie70",
+      "password":"sendhelppls",
+      "permissionlevel":99,
+      "active":true,
+      "requests":[
+        0
+      ]
+    }
+  ]
+}

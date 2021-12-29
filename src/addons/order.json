@@ -1,0 +1,8 @@
+[
+  {
+    "name":"Base commands",
+    "path":"./main_commands",
+    "id":"main_commands",
+    "entry":"./main.json"
+  }
+]

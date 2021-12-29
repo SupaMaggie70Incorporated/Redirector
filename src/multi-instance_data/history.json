@@ -1,0 +1,25 @@
+{
+  "totalRequestsMade":1,
+  "domainsContacted":[
+    {
+      "domain":"duckduckgo.com",
+      "frequency":1,
+      "subdomains":[
+
+      ],
+      "saved":false,
+      "instances":[
+        0
+      ]
+    }
+  ],
+  "requests":[
+    {
+      "id":0,
+      "uid":0,
+      "domain":"duckduckgo.com",
+      "url":"duckduckgo.com/",
+      "location":"192.168.7.109"
+    }
+  ]
+}

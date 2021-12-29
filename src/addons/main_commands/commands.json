@@ -1,0 +1,40 @@
+{
+  "shutdown":{
+    "callers":[
+      "shutdown",
+      "exit",
+      "stop"
+    ],
+    "description":"Closes all connections and saves data, then exits.",
+    "syntax":[],
+    "command":""
+  },
+  "add-user":{
+    "callers":[
+      "new-user",
+      "create-user",
+      "createUser",
+      "newUser"
+    ],
+    "description":"Adds a new user, given [USERNAME] [PASSWORD] [PERMISSION LEVEL].\nNote: new users will not be active by default.",
+    "syntax":["username","password","permissionlevel"],
+    "command":""
+  },
+  "reloadHtmls":{
+    "callers":[
+      "reload-pages",
+      "reloadPages",
+      "reloadHtmls",
+      "reload-htmls"
+    ],
+    "description":"Immediately reloads all htmls in the client folder from referenceIDs.json",
+    "syntax":[],
+    "command":"loadHtmls()"
+  },
+  "reloadUsers":{
+  },
+  "save-state":{
+  },
+  "modify-user":{
+  }
+}

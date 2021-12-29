@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOL - login</title>
+  <link rel="icon" href="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/rolling-on-the-floor-laughing.png">
+</head>
+<body>
+  <script id="script">
+    window.addEventListener("message",(e) => {
+      const data = JSON.parse(e.data)
+    })
+    window.parent.postMessage('{"type":"init"}')
+    window.parent.postMessage('{"type":"getloginstatus"}')
+  </script>
+</body>
+</html>
